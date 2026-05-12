@@ -8,6 +8,9 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import android.content.Intent;
+import androidx.appcompat.widget.AppCompatButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hazyala.pickday.kopo.ac.kr.data.DummyDataSource;
@@ -26,6 +29,10 @@ public class HomeActivity extends AppCompatActivity {
     private LinearLayout layoutDateContainer;
     private LinearLayout layoutRoomContainer;
 
+    private AppCompatButton btnDetail;
+    private AppCompatButton btnFab;
+    private AppCompatButton btnCreateSmall;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +45,8 @@ public class HomeActivity extends AppCompatActivity {
         loadAvailableDates();
 
         loadMeetupRooms();
+
+        setListeners();
     }
 
     private void initViews() {
@@ -52,6 +61,10 @@ public class HomeActivity extends AppCompatActivity {
 
         layoutDateContainer = findViewById(R.id.layoutDateContainer);
         layoutRoomContainer = findViewById(R.id.layoutRoomContainer);
+
+        btnDetail = findViewById(R.id.btnDetail);
+        btnFab = findViewById(R.id.btnFab);
+        btnCreateSmall = findViewById(R.id.btnCreateSmall);
     }
 
     private void setMainMeetupData() {
@@ -211,5 +224,41 @@ public class HomeActivity extends AppCompatActivity {
 
             layoutRoomContainer.addView(view);
         }
+    }
+
+    private void setListeners() {
+
+        btnDetail.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            HomeActivity.this,
+                            RoomDetailActivity.class
+                    );
+
+            startActivity(intent);
+        });
+
+        btnFab.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            HomeActivity.this,
+                            CreateMeetupActivity.class
+                    );
+
+            startActivity(intent);
+        });
+
+        btnCreateSmall.setOnClickListener(v -> {
+
+            Intent intent =
+                    new Intent(
+                            HomeActivity.this,
+                            CreateMeetupActivity.class
+                    );
+
+            startActivity(intent);
+        });
     }
 }
