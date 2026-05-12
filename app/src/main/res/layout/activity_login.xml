@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".LoginActivity">
+
+    <!-- 로고 심볼 -->
+
+    <!-- Pick -->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:src="@drawable/pickday_symbol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+        android:id="@+id/textPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:textColor="#2B2D73"
+        android:fontFamily="@font/notosanskr_bold"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textDay"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"/>
+
+    <!-- Day -->
+    <TextView
+        android:id="@+id/textDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:textColor="#FF7FB5"
+        android:fontFamily="@font/notosanskr_bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/textPick"
+        app:layout_constraintStart_toEndOf="@id/textPick"/>
+
+    <!-- 시작 버튼 -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/pickday_button_primary"
+        android:includeFontPadding="false"
+        android:text="Let’s Start"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
