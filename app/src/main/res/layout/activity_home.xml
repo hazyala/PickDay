@@ -195,7 +195,7 @@
                         android:src="@drawable/splash_character"
                         android:scaleType="fitCenter" />
 
-                    <TextView
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnDetail"
                         android:layout_width="100dp"
                         android:layout_height="30dp"
@@ -208,6 +208,10 @@
                         android:textColor="#6A4DFF"
                         android:textSize="12sp"
                         android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:padding="0dp"
                         android:includeFontPadding="false"/>
                 </FrameLayout>
             </LinearLayout>
@@ -229,13 +233,18 @@
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:text="전체 보기  ›"
                     android:textColor="#6A4DFF"
                     android:textSize="10sp"
                     android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
                     android:layout_marginRight="10dp"/>
             </LinearLayout>
 
@@ -308,13 +317,18 @@
                     android:textSize="13sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:text="전체 보기  ›"
                     android:textColor="#6A4DFF"
                     android:textSize="10sp"
                     android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
                     android:layout_marginRight="10dp"/>
             </LinearLayout>
 
@@ -372,7 +386,7 @@
                         android:includeFontPadding="false"/>
                 </LinearLayout>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnCreateSmall"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -382,6 +396,10 @@
                     android:text="+"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
                     android:includeFontPadding="false"/>
             </LinearLayout>
 
@@ -423,7 +441,7 @@
             android:textColor="#8A88A0"
             android:textSize="12sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFab"
             android:layout_width="53dp"
             android:layout_height="53dp"
@@ -432,6 +450,10 @@
             android:text="+"
             android:textColor="#FFFFFF"
             android:textSize="38sp"
+            android:textAllCaps="false"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
             android:includeFontPadding="false"/>
 
         <TextView
