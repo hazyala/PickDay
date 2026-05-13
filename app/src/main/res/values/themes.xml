@@ -47,4 +47,97 @@
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_rowWeight">1</item>
     </style>
+
+    <style name="PickDayExcludeDateChip">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">@drawable/pickday_unselected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#59566F</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateChip">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">@drawable/pickday_unselected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="PickDayDateTopText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#9A96B4</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateMainText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#59566F</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateSubText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#59566F</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateTopTextSelected">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateMainTextSelected">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#6A4DFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateSubTextSelected">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#6A4DFF</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PickDayDateCheckText">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/pickday_button_primary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
 </resources>

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PickDay">
         <activity
+            android:name=".InviteMembersActivity"
+            android:exported="false" />
+        <activity
             android:name=".SelectionActivity"
             android:exported="false" />
         <activity
